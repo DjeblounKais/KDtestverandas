@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: url('background. jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+    
+.logo{
+    font-size: 32px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    Height: 2px;
+    background: black;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+section{
+    background-image: url(images/photo-bandeau.jpg);
+    
+    
+}
+
+.d1{
+    text-align: center;
+    
+    opacity: 50%;
+    width: auto;
+    box-shadow: 2px 2px 2px #fff;
+
+
+}
+
+h1,ol{
+    color: white;
+    background-color: black;
+    
+    padding-top: 150px;
+}
+
+.estimate-form input, .estimate-form button {
+    flex: 1; 
+    min-width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .estimate-form button {
+    background-color: #0056b3; 
+    cursor: pointer;
+
+  }
+
+  .estimate-form{
+    padding-bottom: 100; 
+
+  }
